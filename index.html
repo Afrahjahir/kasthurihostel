@@ -39,23 +39,22 @@
 </head>
 
 <body>
-
-<!-- ===== Background Music (Auto Play After Preloader Only) ===== -->
+<!-- ===== Background Music (Auto Play After Preloader Ends) ===== -->
 <audio id="bgMusic" preload="auto" loop muted>
   <source src="assets/music/greylight-melancholic-piano-and-strings-430178.mp3" type="audio/mpeg">
 </audio>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("load", function () {
     const audio = document.getElementById("bgMusic");
 
-    // 🔊 Function to start music with fade-in/out
+    // Function to start music with fade in/out
     function startMusic() {
       let volume = 0.0;
       audio.muted = false;
       audio.volume = 0;
 
-      // Fade in (smoothly increase volume)
+      // Fade in
       const fadeIn = setInterval(() => {
         if (volume < 0.6) {
           volume += 0.1;
@@ -63,7 +62,7 @@
         } else {
           clearInterval(fadeIn);
         }
-      }, 10);
+      }, 100);
 
       // Fade out after 5 seconds
       setTimeout(() => {
@@ -75,34 +74,29 @@
             audio.pause();
             audio.currentTime = 0;
           }
-        }, 200);
-      }, 5000); // 5 seconds of music
+        }, 100);
+      }, 5000); // 5 seconds play duration
     }
 
-    // 🎬 Function to play after preloader completes
-    function playMusicAfterPreloader() {
-      // Simulate your preloader end timing — adjust delay to match your site
-      setTimeout(() => {
-        audio.play().then(() => {
-          console.log("🎵 Music started after preloader finished");
-          startMusic();
-        }).catch(() => {
-          console.warn("⚠️ Autoplay blocked — waiting for user click...");
-          // Wait for first user click if autoplay is blocked
-          document.addEventListener("click", function userClick() {
-            audio.play().then(() => {
-              startMusic();
-            });
-            document.removeEventListener("click", userClick);
+    // Try to play automatically after preloader ends
+    setTimeout(() => {
+      audio.play().then(() => {
+        console.log("🎵 Music started automatically after preloader");
+        startMusic();
+      }).catch(() => {
+        console.warn("⚠️ Autoplay blocked — waiting for user click...");
+        // If blocked, wait for first user interaction
+        document.addEventListener("click", function userClick() {
+          audio.play().then(() => {
+            startMusic();
           });
+          document.removeEventListener("click", userClick);
         });
-      }, 3000); // ⏳ 3 sec = preloader duration (change as needed)
-    }
-
-    // ✅ Run only when page fully loaded
-    window.addEventListener("load", playMusicAfterPreloader);
+      });
+    }, 100); // 0.1 sec after preloader
   });
 </script>
+
 
 <style>
     .blog-1-bottom-content {
