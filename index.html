@@ -39,49 +39,54 @@
 </head>
 
 <body>
-
-<!-- ===== Background Music (Auto Play for 5 Seconds, Fade In + Fade Out) ===== -->
-<!-- ===== Background Music (Auto Play for 5 Seconds, Fade In + Fade Out) ===== -->
+<!-- ===== Background Music (Starts After Preloader Ends) ===== -->
 <audio id="bgMusic" preload="auto" loop muted>
   <source src="assets/music/greylight-melancholic-piano-and-strings-430178.mp3" type="audio/mpeg">
 </audio>
 
 <script>
-  window.addEventListener("load", function () {
+  document.addEventListener("DOMContentLoaded", function () {
     const audio = document.getElementById("bgMusic");
 
-    // Start automatically on every refresh
-    setTimeout(() => {
-      audio.play().then(() => {
-        console.log("Music started automatically (muted first).");
+    // Function to play music after preloader hides
+    function playMusicAfterPreloader() {
+      setTimeout(() => {
+        audio.play().then(() => {
+          console.log("🎵 Music started after preloader");
 
-        // 🔊 Fade IN (volume up gradually)
-        let volume = 0.0;
-        audio.muted = false;
-        const fadeIn = setInterval(() => {
-          if (volume < 0.6) {
-            volume += 0.1;
-            audio.volume = volume;
-          } else {
-            clearInterval(fadeIn);
-          }
-        }, 200);
-       setTimeout(() => {
-          const fadeOut = setInterval(() => {
-            if (audio.volume > 0.05) {
-              audio.volume -= 0.1;
+          // Fade IN
+          let volume = 0.0;
+          audio.muted = false;
+          const fadeIn = setInterval(() => {
+            if (volume < 0.6) {
+              volume += 0.1;
+              audio.volume = volume;
             } else {
-              clearInterval(fadeOut);
-              audio.pause();
-              audio.currentTime = 0;
+              clearInterval(fadeIn);
             }
           }, 200);
-        }, 5000); // 5 seconds of play time
 
-      }).catch(err => {
-        console.warn("Autoplay blocked:", err);
-      });
-    }, 500); // small delay after page load
+          // Fade OUT and stop after 5 seconds
+          setTimeout(() => {
+            const fadeOut = setInterval(() => {
+              if (audio.volume > 0.05) {
+                audio.volume -= 0.1;
+              } else {
+                clearInterval(fadeOut);
+                audio.pause();
+                audio.currentTime = 0;
+              }
+            }, 200);
+          }, 5000); // 5 sec play duration
+
+        }).catch(err => {
+          console.warn("Autoplay blocked:", err);
+        });
+      }, 1000); // 1 second delay after preloader hides
+    }
+
+    // ✅ When page fully loaded (preloader done)
+    window.addEventListener("load", playMusicAfterPreloader);
   });
 </script>
 
