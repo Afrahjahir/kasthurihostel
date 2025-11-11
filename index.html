@@ -4,24 +4,22 @@
 <meta charset="utf-8">
 <title>Women's Hostel in T Nagar Chennai | Safe & Affordable Stay</title>
 <!-- Stylesheets -->
-<link href="/assets//css/bootstrap.css" rel="stylesheet">
-<link href="/assets//css/style.css" rel="stylesheet">
+<link href="/assets/css/bootstrap.css" rel="stylesheet">
+<link href="/assets/css/style.css" rel="stylesheet">
 <!-- Responsive File -->
-<link href="/assets//css/responsive.css" rel="stylesheet">
+<link href="/assets/css/responsive.css" rel="stylesheet">
 <!-- Color File -->
-<link href="/assets//css/color.css" rel="stylesheet">
+<link href="/assets/css/color.css" rel="stylesheet">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="../../css2?family=Cormorant:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
-<link rel="shortcut icon" href="/assets//images/favicon.png" type="image/x-icon">
-<link rel="icon" href="/assets//images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+<link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <meta name="keywords" content="women's hostel T Nagar Chennai, ladies hostel in T Nagar, best hostel for women Chennai, affordable women's hostel Chennai, safe ladies hostel T Nagar">
     <meta name="description" content="Looking for a women's hostel in T Nagar, Chennai? Hostel Kasthuri offers safe, clean, and affordable rooms with all facilities near major colleges & offices.">
@@ -29,6 +27,7 @@
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
 <style>
+
 h4.feature-3-title.pb_10 {
     font-size: 29px;
     color: #E7B87C;
@@ -40,416 +39,49 @@ h4.theme-bg.color_light.p_16.pl_30 {
     text-align: center;
     color: #4b1a50;
 }
-.card-body{
- height:350px;
-        overflow-y:auto;
-        scroll-behavior:smooth;
-        scroll-snap-type:y mandatory;
-}
-
-</style>
-<body>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const tabs = document.querySelectorAll(".filter");
-  const items = document.querySelectorAll(".masonry-item");
-
-  function showTab(filter) {
-    items.forEach(item => {
-      if (item.classList.contains(filter.replace(".", ""))) {
-        item.style.display = "block";
-        item.classList.add("fadeInUp");
-      } else {
-        item.style.display = "none";
-        item.classList.remove("fadeInUp");
-      }
-    });
-  }
-
-  // Default active tab (Ground Floor)
-  const defaultTab = document.querySelector('.filter.active') || tabs[0];
-  if (defaultTab) {
-    tabs.forEach(t => t.classList.remove("active"));
-    defaultTab.classList.add("active");
-    showTab(defaultTab.getAttribute("data-filter"));
-  }
-
-  // Tab click handling
-  tabs.forEach(tab => {
-    tab.addEventListener("click", function () {
-      tabs.forEach(t => t.classList.remove("active"));
-      this.classList.add("active");
-      showTab(this.getAttribute("data-filter"));
-    });
-  });
-});
-</script>
-
-<style>
-/* ---- Tab Buttons ---- */
-.filter-tabs {
+ .filters-vertical {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-  padding: 0;
+  flex-direction: column;
+}
+
+.filters-vertical ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.filter-tabs li {
-  background: #3b184c;
-  color: #fff;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 5px;
+
+.filters-vertical li {
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   cursor: pointer;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  text-align: center;
-}
-.filter-tabs li.active {
-  background: #e0b97a;
-  color: #3b184c;
+  background: #fff;
+  transition: all 0.2s ease;
 }
 
-/* ---- Tab Content Animation ---- */
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
+.filters-vertical li.active {
+  background: #4b1a50;
+  color: #fff;
+  border-color: #4b1a50;
 }
-.fadeInUp {
-  animation: fadeInUp 0.6s ease;
+.section-padding {
+    padding: 18px 0 60px;
+}
+ul.filter-tabs li:hover, ul.filter-tabs li.active {
+    background-color: #ba93d1;
+    color: #fff;
+}
+.theme-bg {
+    background-color: #ba93d1;
 }
 
-/* ---- Mobile View Adjustments ---- */
-@media screen and (max-width: 768px) {
-  .filter-tabs li {
-    flex: 1 1 45%;
-    margin: 5px;
-    padding: 8px 5px;
-    font-size: 14px;
-  }
-  .items-container.row {
-    overflow: hidden;
-}
-}
-</style>
+    @media (max-width:480px){
+      body{margin:12px;}
+      .thumb{height:110px;}
+      .tab-btn{padding:7px 10px;}
+    }
 
-<div class="page-wrapper">
-
-    <div class="loader-wrap">
-        <div class="preloader"><div class="preloader-close">Preloader Close</div></div>
-        <div class="layer layer-one"><span class="overlay"></span></div>
-        <div class="layer layer-two"><span class="overlay"></span></div>        
-        <div class="layer layer-three"><span class="overlay"></span></div>        
-    </div>
-
-<header class="main-header header-style-one">
-        <div class="header-top-1">
-            <div class="auto-container">
-                <div class="header-top-1-row d-flex align-items-center justify-content-between">
-                    <div class="header-top-1-left-column">
-                        <ul class="header-top-1-contact-info d-flex align-items-center">
-                            <li><a href="mailto:hostelkasthuri@gmail.com">hostelkasthuri@gmail.com</a></li>
-                
-                        </ul>
-                    </div>
-                    <div class="header-top-1-right-column d-flex align-items-center">
-                       
-                        <ul class="header-top-1-social-icon d-flex align-items-center">
-    <li><a href="https://www.facebook.com/profile.php?id=61582966290944"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="https://www.instagram.com/kasthurihostels/?hl=en"><i class="fab fa-fab fa-instagram"></i></a></li>
-                            <li><a href="https://www.youtube.com/@emaikannan1682"><i class="fab fa-youtube "></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header-upper">
-            <div class="auto-container">
-                <div class="inner-container d-flex align-items-center justify-content-between">
-                    <div class="logo-box">
-                        <div class="logo" style="width: 130px;"><a href="/"><img src="/assets//images/kasthurihostel_logo_KH.webp" alt=""></a></div>
-                    </div>
-                    <div class="middle-column">
-                        <div class="nav-outer">
-                            <div class="mobile-nav-toggler"><img src="/assets//images/icons/icon-bar-2.png" alt=""></div>
-                            <nav class="main-menu navbar-expand-md navbar-light">
-                                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                                    <ul class="navigation">
-                                       <li class=""><a href="/">Home</a></li>                                    
-                                        <li class=""><a href="/about-us/">About</a></li>
-                                        <li class=""><a href="/our-branches/">Our Branches</a></li>
-                                         <li class=""><a href="/gallery/">Gallery</a></li>
-                                         <li class=""><a href="/achivements/">Achivements</a></li>
-                                         <li class=""><a href="/blogs/">Blog</a></li>
-                                        <li><a href="/contact/">Contact</a></li>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="right-column d-flex align-items-center">
-                         <div class="header-link-btn"><a href="/contact/" class="btn-1 btn-small btn-alt">Enquiry<span></span></a></div>
-                    </div>                      
-                </div>
-            </div>
-        </div>
-        <div class="sticky-header">
-            <div class="header-upper">
-                <div class="auto-container">
-                    <div class="inner-container d-flex align-items-center justify-content-between">
-                        <!--Logo-->
-                        <div class="logo-box">
-                            <div class="logo" style="width: 240px;"><a href="/"><img src="/assets//images/kasthurihostel_logo_KH.webp" alt="" style="width: 130px;"></a></div>
-                        </div>
-                        <div class="middle-column">
-                            <!--Nav Box-->
-                            <div class="nav-outer">
-                                <!--Mobile Navigation Toggler-->
-                                <div class="mobile-nav-toggler"><img src="/assets//images/icons/icon-bar-2.png" alt=""></div>
-    
-                                <!-- Main Menu -->
-                                <nav class="main-menu navbar-expand-md navbar-light">
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="right-column d-flex align-items-center">                        
-                            <div class="header-link-btn"><a href="/contact/" class="btn-1 btn-small btn-alt">Enquiry<span></span></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="mobile-menu">
-            <div class="menu-backdrop"></div>
-            <div class="close-btn"><span class="fal fa-times"></span></div>
-            
-            <nav class="menu-box">
-                <div class="nav-logo"><a href="/"><img src="/assets//images/kasthurihostel_logo_KH.webp" alt="" title="" style="width: 130px;"></a></div>
-                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
-				<!--Social Links-->
-				<div class="social-links">
-					<ul class="header-top-1-social-icon d-flex align-items-center">
-                               <li><a href="https://www.facebook.com/profile.php?id=61582966290944"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="https://www.instagram.com/kasthurihostels/?hl=en"><i class="fab fa-fab fa-instagram"></i></a></li>
-                            <li><a href="https://www.youtube.com/@emaikannan1682"><i class="fab fa-youtube "></i></a></li>
-                        </ul>
-                </div>
-            </nav>
-        </div>
-
-        <div class="nav-overlay">
-            <div class="cursor"></div>
-            <div class="cursor-follower"></div>
-        </div>
-    </header>
-    
-
-    <div class="page-title" style="background-image: url(/assets//images/background/page-title.jpg);">
-        <div class="auto-container">
-            <h1>Women’s Hostel</h1>
-        </div>
-    </div>
-    <div class="bredcrumb-wrap">
-        <div class="auto-container">
-            <ul class="bredcrumb-list">
-                <li><a href="/">Home</a></li>
-                <li>Women’s Hostel</li>
-            </ul>
-        </div>
-    </div>
-   
-<!-- Gallery Section -->
-   <section class="section-padding">
-        <div class="auto-container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="single-post">
-                        <div class="row mb_30">
-                      <div class="filters">
-          <ul class="filter-tabs filter-btns d-flex justify-content-center flex-wrap">
-            <li class="filter active" data-role="button" data-filter=".cat-1">Ground Floor</li>
-            <li class="filter" data-role="button" data-filter=".cat-2">First Floor</li>
-            <li class="filter" data-role="button" data-filter=".cat-3">Second Floor</li>
-            <li class="filter" data-role="button" data-filter=".cat-4">Third Floor</li>
-          </ul>
-        </div>
-
-        <div class="sortable-masonry">
-          <div class="items-container row" >
-            <!-- Ground Floor -->
-            <div class="col-lg-12 col-md-6 col-sm-12 gallery-block-1 masonry-item cat-1" style="display:block">
-              <div class="event-1-block d-flex flex-wrap align-items-center wow fadeInLeft" data-wow-delay=".1s" data-wow-duration=".8s">
-                <div class="event-1-image mb-3 mb-md-0 me-md-3 flex-shrink-0 text-center">
-                  <a href="#"><img src="/assets/images/womens_hostel/branches/image1.webp" alt="" class="img-fluid rounded"></a>
-                </div>
-                <div class="event-1-bottom-content">
-                  <h4 class="event-1-title mb_5"><a href="#">Ground Floor Rooms</a></h4>
-                  <ul class="list-unstyled mb-0">
-                    <li class="markaline"><span>G1 - </span>5 sharing <span style="color:brown">13000/month</span></li>
-                    <li class="markaline"><span>G2 - </span>2 sharing <span style="color:brown">13000/month</span></li>
-                    <li class="markaline"><span>G3 - </span>6 sharing <span style="color:brown">10000/month</span></li>
-                    <li class="markaline"><span>G4 - </span>4 sharing <span style="color:brown">11500/month</span></li>
-                    <li class="markaline"><span>G5 - </span>5 sharing <span style="color:brown">11000/month</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- First Floor -->
-            <div class="col-lg-12 col-md-6 col-sm-12 gallery-block-1 masonry-item cat-2">
-              <div class="event-1-block d-flex flex-wrap align-items-center wow fadeInLeft" data-wow-delay=".2s" data-wow-duration=".8s">
-                <div class="event-1-image mb-3 mb-md-0 me-md-3 flex-shrink-0 text-center">
-                  <a href="#"><img src="/assets/images/womens_hostel/branches/image1.webp" alt="" class="img-fluid rounded"></a>
-                </div>
-                <div class="event-1-bottom-content">
-                  <h4 class="event-1-title mb_5"><a href="#">First Floor Rooms</a></h4>
-                  <ul class="list-unstyled mb-0">
-                    <li class="markaline"><span>F1 - </span>6 Sharing <span style="color:brown">10000/month</span></li>
-                    <li class="markaline"><span>F2 - </span>6 sharing <span style="color:brown">13000/month</span></li>
-                    <li class="markaline"><span>F3 - </span>3 sharing <span style="color:brown">12000/month</span></li>
-                    <li class="markaline"><span>F4 - </span>7 sharing <span style="color:brown">10500 & 11000/month</span></li>
-                    <li class="markaline"><span>F5 - </span>5 sharing <span style="color:brown">11000/month</span></li>
-                    <li class="markaline"><span>F6 - </span>6 sharing <span style="color:brown">18000/month</span></li>
-                    <li class="markaline"><span>F7 - </span>6 sharing <span style="color:brown">11500/month</span></li>
-                    <li class="markaline"><span>F8 - </span>4 sharing <span style="color:brown">10500/month</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- Second Floor -->
-            <div class="col-lg-12 col-md-6 col-sm-12 gallery-block-1 masonry-item cat-3">
-              <div class="event-1-block d-flex flex-wrap align-items-center wow fadeInLeft" data-wow-delay=".2s" data-wow-duration=".8s">
-                <div class="event-1-image mb-3 mb-md-0 me-md-3 flex-shrink-0 text-center">
-                  <a href="#"><img src="/assets/images/womens_hostel/branches/image1.webp" alt="" class="img-fluid rounded"></a>
-                </div>
-                <div class="event-1-bottom-content">
-                  <h4 class="event-1-title mb_5"><a href="#">Second Floor Room</a></h4>
-                  <ul class="list-unstyled mb-0">
-                    <li class="markaline"><span>S1 - </span>4 Sharing <span style="color:brown">11000/month</span></li>
-                    <li class="markaline"><span>S2 - </span>3 sharing <span style="color:brown">11000/month</span></li>
-                    <li class="markaline"><span>S3 - </span>4 sharing <span style="color:brown">11000/month</span></li>
-                    <li class="markaline"><span>S4 - </span>7 sharing <span style="color:brown">9500 & 8500/month</span></li>
-                    <li class="markaline"><span>S5 - </span>6 sharing <span style="color:brown">10000 & 10500/month</span></li>
-                    <li class="markaline"><span>S6 - </span>3 sharing <span style="color:brown">11000/month</span></li>
-                    <li class="markaline"><span>S7 - </span>3 sharing <span style="color:brown">11000/month</span></li>
-                    <li class="markaline"><span>S8 - </span>5 sharing <span style="color:brown">11000/month</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- Third Floor -->
-            <div class="col-lg-12 col-md-6 col-sm-12 gallery-block-1 masonry-item cat-4">
-              <div class="event-1-block d-flex flex-wrap align-items-center wow fadeInLeft" data-wow-delay=".2s" data-wow-duration=".8s">
-                <div class="event-1-image mb-3 mb-md-0 me-md-3 flex-shrink-0 text-center">
-                  <a href="#"><img src="/assets/images/womens_hostel/branches/image4.webp" alt="" class="img-fluid rounded"></a>
-                </div>
-                <div class="event-1-bottom-content">
-                  <h4 class="event-1-title mb_5"><a href="#">Third Floor Room (A/C)</a></h4>
-                  <ul class="list-unstyled mb-0">
-                    <li class="markaline"><span>T1 - </span>10 Sharing <span style="color:brown">8500/month</span></li>
-                    <li class="markaline"><span>T2 - </span>8 sharing <span style="color:brown">8500/month</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-      </div>
-      
-                <div class="col-lg-4 ps-lg-40">
-                    <div class="event-info-widget mb_30">
-                        <h4 class="theme-bg color_light p_16 pl_30">Menu List</h4>
-                        
-                        <ul class="gray-bg p_30 pt_10 pb_0 fs_18">
-                             <div class="card-body marka-card-scroll">
-            
-              <!-- Monday -->
-              <div class="marka_scroll">
-                <h4 class="feature-3-title pb_10">Monday</h4>
-                <li class="markacolour"><span class="fw_medium color_dark">Breakfast:</span> Idly, Sambaar, Chutney, Tea</li>
-                <li><div class="event-widget-divider"></div></li>
-                <li class="markacolour"><span class="fw_medium color_dark">Lunch:</span> Lemon(or)Tamarind Rice, Pickle, Veg Fry</li>
-                <li><div class="event-widget-divider"></div></li>
-                <li class="markacolour"><span class="fw_medium color_dark">Dinner:</span> Chapatti(or)Poori, Kurumaa, Tea</li>
-              </div>
-
-              <!-- Tuesday -->
-              <div class="marka_scroll">
-                <h4 class="feature-3-title pb_10">Tuesday</h4>
-                <li class="markacolour"><span class="fw_medium color_dark">Breakfast:</span> Upma, Sugar, Chutney, Tea</li>
-                <li><div class="event-widget-divider"></div></li>
-                <li class="markacolour"><span class="fw_medium color_dark">Lunch:</span> Rice, Pulikozhambu, Kootu, Pickle, ButterMilk</li>
-                <li><div class="event-widget-divider"></div></li>
-                <li class="markacolour"><span class="fw_medium color_dark">Dinner:</span> Dosai, Chutney, Sambaar, Tea</li>
-              </div>
-
-              <!-- Wednesday -->
-              <div class="marka_scroll">
-                <h4 class="feature-3-title pb_10">Wednesday</h4>
-                <li class="markacolour"><span class="fw_medium color_dark">Breakfast:</span> Sevai, Sugar, Chutney, Tea</li>
-                <li><div class="event-widget-divider"></div></li>
-                <li class="markacolour"><span class="fw_medium color_dark">Lunch:</span> Rice, Sambaar, Rasam, Poriyal, Pickle</li>
-                <li><div class="event-widget-divider"></div></li>
-                <li class="markacolour"><span class="fw_medium color_dark">Dinner:</span> Vegetable Biryani, Egg(or)Raitha, Tea</li>
-              </div>
-
-              <!-- Thursday -->
-              <div class="marka_scroll">
-                <h4 class="feature-3-title pb_10">Thursday</h4>
-                <li class="markacolour"><span class="fw_medium color_dark">Breakfast:</span> Dosai, Sambaar, Chutney, Tea</li>
-                <li><div class="event-widget-divider"></div></li>
-                <li class="markacolour"><span class="fw_medium color_dark">Lunch:</span> Rice, Karakozhambu, Kootu, Pickle, ButterMilk</li>
-                <li><div class="event-widget-divider"></div></li>
-                <li class="markacolour"><span class="fw_medium color_dark">Dinner:</span> Chapatti(or)Parota, Kuruma, Tea</li>
-              </div>
-
-              <!-- Friday -->
-              <div class="marka_scroll">
-                <h4 class="feature-3-title pb_10">Friday</h4>
-                <li class="markacolour"><span class="fw_medium color_dark">Breakfast:</span> Semiya, Chutney, Sugar, Tea</li>
-                <li><div class="event-widget-divider"></div></li>
-                <li class="markacolour"><span class="fw_medium color_dark">Lunch:</span> Rice, Sambaar, Rasam, Poriyal, Pickle</li>
-                <li><div class="event-widget-divider"></div></li>
-                <li class="markacolour"><span class="fw_medium color_dark">Dinner:</span> Sambaar Satham, Appalam(or)Dosai, Chutney, Tea</li>
-              </div>
-
-              <!-- Saturday -->
-              <div class="marka_scroll">
-                <h4 class="feature-3-title pb_10">Saturday</h4>
-                <li class="markacolour"><span class="fw_medium color_dark">Breakfast:</span> Pongal, Sambaar, Chutney, Tea</li>
-                <li><div class="event-widget-divider"></div></li>
-                <li class="markacolour"><span class="fw_medium color_dark">Lunch:</span> Rice, Vathakuzhambu, Kootu, Pickle, ButterMilk</li>
-                <li><div class="event-widget-divider"></div></li>
-                <li class="markacolour"><span class="fw_medium color_dark">Dinner:</span> Idly, Sambaar, Chutney, Sugar, Tea</li>
-              </div>
-
-              <!-- Sunday -->
-              <div class="marka_scroll">
-                <h4 class="feature-3-title pb_10">Sunday</h4>
-                <li class="markacolour"><span class="fw_medium color_dark">Breakfast:</span> Noodles, Tomato Sauce, Tea</li>
-                <li><div class="event-widget-divider"></div></li>
-                <li class="markacolour"><span class="fw_medium color_dark">Lunch:</span> Rice, Sambaar, Chicken, Poriyal, Rasam, Pickle, ButterMilk</li>
-                <li><div class="event-widget-divider"></div></li>
-                <li class="markacolour"><span class="fw_medium color_dark">Dinner:</span> Rice, Sambaar, Appalam, Tea</li>
-              </div>
-            </div>
-                        </ul>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-
-  <!-- Responsive CSS -->
-  <style>
     /* Fix flex wrapping for mobile */
     @media (max-width: 991px) {
       .event-1-block {
@@ -509,212 +141,399 @@ document.addEventListener("DOMContentLoaded", function () {
     .marka-card-scroll::-webkit-scrollbar-thumb:hover {
       background: #999;
     }
-
+.color_dark{
+  color:#fff
+}
 
   </style>
 
 
+<body>
+ 
+<div class="page-wrapper">
 
-
-<!-- ====== Travel 3D Carousel Section Start ====== -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-<!-- ✅ Fancybox CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
-
-<section class="section-padding" style="background: linear-gradient(135deg, #f9f5ff 0%, #f3ecfa 50%, #efe7f6 100%);">
-  <div class="p_absolute l_0 b_0 r_0 t_0" style="background: url(/assets//images/shape/pattern-3.png) no-repeat center bottom"></div>
-  <div class="auto-container">
-    <div class="section_heading text-center mb_60">
-      <h2 class="section_heading_title_big" style="color:#4b1a50">Our Reviews</h2>
+    <div class="loader-wrap">
+        <div class="preloader"><div class="preloader-close">Preloader Close</div></div>
+        <div class="layer layer-one"><span class="overlay"></span></div>
+        <div class="layer layer-two"><span class="overlay"></span></div>        
+        <div class="layer layer-three"><span class="overlay"></span></div>        
     </div>
-    <section class="travel-carousel">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <!-- Slide 1 -->
-          <div class="swiper-slide">
-            <a href="/assets//images/womens_hostel_reviews/image1.webp" data-fancybox="reviews">
-              <img src="/assets//images/womens_hostel_reviews/image1.webp" alt="Travel 1" />
-            </a>
-          </div>
 
-          <div class="swiper-slide">
-            <a href="/assets//images/womens_hostel_reviews/image2.webp" data-fancybox="reviews">
-              <img src="/assets//images/womens_hostel_reviews/image2.webp" alt="Travel 1" />
-            </a>
-          </div>
+<header class="main-header header-style-one">
+        <div class="header-top-1">
+            <div class="auto-container">
+                <div class="header-top-1-row d-flex align-items-center justify-content-between">
+                    <div class="header-top-1-left-column">
+                        <ul class="header-top-1-contact-info d-flex align-items-center">
+                            <li><a href="mailto:hostelkasthuri@gmail.com">hostelkasthuri@gmail.com</a></li>
+                
+                        </ul>
+                    </div>
+                    <div class="header-top-1-right-column d-flex align-items-center">
+                       
+                        <ul class="header-top-1-social-icon d-flex align-items-center">
+    <li><a href="https://www.facebook.com/profile.php?id=61582966290944"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/kasthurihostels/?hl=en"><i class="fab fa-fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.youtube.com/@emaikannan1682"><i class="fab fa-youtube "></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-upper">
+            <div class="auto-container">
+                <div class="inner-container d-flex align-items-center justify-content-between">
+                    <div class="logo-box">
+                        <div class="logo" style="width: 130px;"><a href="/"><img src="/assets/images/kasthurihostel_logo_KH.webp" alt=""></a></div>
+                    </div>
+                    <div class="middle-column">
+                        <div class="nav-outer">
+                            <div class="mobile-nav-toggler"><img src="/assets/images/icons/icon-bar-2.png" alt=""></div>
+                            <nav class="main-menu navbar-expand-md navbar-light">
+                                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                    <ul class="navigation">
+                                       <li class=""><a href="/">Home</a></li>                                    
+                                        <li class=""><a href="/about-us/">About</a></li>
+                                        <li class=""><a href="/our-branches/">Our Branches</a></li>
+                                         <li class=""><a href="/gallery/">Gallery</a></li>
+                                         <li class=""><a href="/achievements/">Achievements</a></li>
+                                         <li class=""><a href="/blogs/">Blog</a></li>
+                                        <li><a href="/contact/">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="right-column d-flex align-items-center">
+                         <div class="header-link-btn"><a href="/contact/" class="btn-1 btn-small btn-alt">Enquiry<span></span></a></div>
+                    </div>                      
+                </div>
+            </div>
+        </div>
+        <div class="sticky-header">
+            <div class="header-upper">
+                <div class="auto-container">
+                    <div class="inner-container d-flex align-items-center justify-content-between">
+                        <!--Logo-->
+                        <div class="logo-box">
+                            <div class="logo" style="width: 240px;"><a href="/"><img src="/assets/images/kasthurihostel_logo_KH.webp" alt="" style="width: 130px;"></a></div>
+                        </div>
+                        <div class="middle-column">
+                            <!--Nav Box-->
+                            <div class="nav-outer">
+                                <!--Mobile Navigation Toggler-->
+                                <div class="mobile-nav-toggler"><img src="/assets/images/icons/icon-bar-2.png" alt=""></div>
+    
+                                <!-- Main Menu -->
+                                <nav class="main-menu navbar-expand-md navbar-light">
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="right-column d-flex align-items-center">                        
+                            <div class="header-link-btn"><a href="/contact/" class="btn-1 btn-small btn-alt">Enquiry<span></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-          <div class="swiper-slide">
-            <a href="/assets//images/womens_hostel_reviews/image3.webp" data-fancybox="reviews">
-              <img src="/assets//images/womens_hostel_reviews/image3.webp" alt="Travel 1" />
-            </a>
-          </div>
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><span class="fal fa-times"></span></div>
+            
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="/"><img src="/assets/images/kasthurihostel_logo_KH.webp" alt="" title="" style="width: 130px;"></a></div>
+                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+				<!--Social Links-->
+				<div class="social-links">
+					<ul class="header-top-1-social-icon d-flex align-items-center">
+                               <li><a href="https://www.facebook.com/profile.php?id=61582966290944"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/kasthurihostels/?hl=en"><i class="fab fa-fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.youtube.com/@emaikannan1682"><i class="fab fa-youtube "></i></a></li>
+                        </ul>
+                </div>
+            </nav>
+        </div>
 
-          <div class="swiper-slide">
-            <a href="/assets//images/womens_hostel_reviews/image4.webp" data-fancybox="reviews">
-              <img src="/assets//images/womens_hostel_reviews/image4.webp" alt="Travel 1" />
-            </a>
-          </div>
+        <div class="nav-overlay">
+            <div class="cursor"></div>
+            <div class="cursor-follower"></div>
+        </div>
+    </header>
+    
 
-      
-          <div class="swiper-slide">
-            <a href="/assets//images/womens_hostel_reviews/image6.webp" data-fancybox="reviews">
-              <img src="/assets//images/womens_hostel_reviews/image6.webp" alt="Travel 1" />
-            </a>
-          </div>
+    <div class="page-title" style="background-image: url(/assets/images/background/page-title.jpg);">
+        <div class="auto-container">
+            <h1>Women’s Hostel</h1>
+        </div>
+    </div>
+    <div class="bredcrumb-wrap">
+        <div class="auto-container">
+            <ul class="bredcrumb-list">
+                <li><a href="/">Home</a></li>
+                <li>Women’s Hostel</li>
+            </ul>
+        </div>
+    </div>
+    <!-- ===== Filter Section Start ===== -->
+<section class="section-padding">
+  <div class="auto-container">
+    <div class="row">
 
-          <div class="swiper-slide">
-            <a href="/assets//images/womens_hostel_reviews/image7.webp" data-fancybox="reviews">
-              <img src="/assets//images/womens_hostel_reviews/image7.webp" alt="Travel 1" />
-            </a>
-          </div>
+      <!-- Left Column: Filter + Gallery -->
+      <div class="col-lg-8">
+        <div class="single-post">
+          
+          <!-- ===== Filter Section Start ===== -->
+<section class="section-padding">
+  <div class="auto-container">
+    <div class="row">
 
-          <div class="swiper-slide">
-            <a href="/assets//images/womens_hostel_reviews/image9.webp" data-fancybox="reviews">
-              <img src="/assets//images/womens_hostel_reviews/image9.webp" alt="Travel 1" />
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="/assets//images/womens_hostel_reviews/image10.webp" data-fancybox="reviews">
-              <img src="/assets//images/womens_hostel_reviews/image10.webp" alt="Travel 1" />
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="/assets//images/womens_hostel_reviews/image11.webp" data-fancybox="reviews">
-              <img src="/assets//images/womens_hostel_reviews/image11.webp" alt="Travel 1" />
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="/assets//images/womens_hostel_reviews/image12.webp" data-fancybox="reviews">
-              <img src="/assets//images/womens_hostel_reviews/image12.webp" alt="Travel 1" />
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="/assets//images/womens_hostel_reviews/image13.webp" data-fancybox="reviews">
-              <img src="/assets//images/womens_hostel_reviews/image13.webp" alt="Travel 1" />
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="/assets//images/womens_hostel_reviews/image14.webp" data-fancybox="reviews">
-              <img src="/assets//images/womens_hostel_reviews/image14.webp" alt="Travel 1" />
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="/assets//images/womens_hostel_reviews/image15.webp" data-fancybox="reviews">
-              <img src="/assets//images/womens_hostel_reviews/image15.webp" alt="Travel 1" />
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="/assets//images/womens_hostel_reviews/image16.webp" data-fancybox="reviews">
-              <img src="/assets//images/womens_hostel_reviews/image16.webp" alt="Travel 1" />
-            </a>
-          </div>
-           <div class="swiper-slide">
-            <a href="/assets//images/womens_hostel_reviews/image17.webp" data-fancybox="reviews">
-              <img src="/assets//images/womens_hostel_reviews/image17.webp" alt="Travel 1" />
-            </a>
-          </div>
-          </div>
-
-        <!-- Pagination Dots -->
-        <div class="swiper-pagination"></div>
+      <!-- Left Column: Filter Tabs Vertical + Gallery -->
+      <div class="col-lg-3">
+        <!-- Vertical Tabs -->
+        <div class="filters-vertical d-flex flex-column">
+          <ul class="filter-tabs filter-btns">
+             <li class="filter active" data-role="button" data-filter=".cat-9">1 Sharing</li>
+           <li class="filter" data-role="button" data-filter=".cat-1">2 Sharing</li>
+            <li class="filter" data-role="button" data-filter=".cat-2">3 Sharing</li>
+            <li class="filter" data-role="button" data-filter=".cat-3">4 sharing</li>
+            <li class="filter" data-role="button" data-filter=".cat-4">5 sharing</li>
+            <li class="filter" data-role="button" data-filter=".cat-5">6 sharing</li>
+            <li class="filter" data-role="button" data-filter=".cat-6">7 sharing</li>
+            <li class="filter" data-role="button" data-filter=".cat-7">8 sharing</li>
+            <li class="filter" data-role="button" data-filter=".cat-8">10 sharing</li>
+          </ul>
+        </div>
       </div>
-    </section>
-  </div>
-</section>
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<!-- ✅ Fancybox JS -->
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+      <!-- Right Column: Gallery -->
+      <div class="col-lg-9">
+        <div class="filter-list row clearfix">
+          <!-- Women's Hostel -->
+          <div class="gallery-item mix cat-9 col-lg-12 col-md-6 col-sm-12">
+            <div class="inner-box">
+              <div class="event-1-block  wow fadeInLeft" data-wow-delay=".1s" data-wow-duration=".8s">
+                <div class="event-1-image mb-3 mb-md-0 me-md-3 text-center">
+                  <a href="#"><img src="/assets/images/womens_hostel/branches/image1.webp" alt="" class="img-fluid rounded"></a>
+                </div>
+                <div class="event-1-bottom-content">
+                  <h4 class="event-1-title mb_5 mt_25"><a href="#">Starts from 13000/month</a></h4>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item mix cat-1 col-lg-12 col-md-6 col-sm-12">
+            <div class="inner-box">
+             <div class="event-1-block  wow fadeInLeft" data-wow-delay=".1s" data-wow-duration=".8s">
+                <div class="event-1-image mb-3 mb-md-0 me-md-3 text-center">
+                  <a href="#"><img src="/assets/images/womens_hostel/branches/image1.webp" alt="" class="img-fluid rounded"></a>
+                </div>
+                <div class="event-1-bottom-content">
+                  <h4 class="event-1-title mb_5 mt_25"><a href="#">Starts from 13000/month</a></h4>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item mix cat-2 col-lg-12 col-md-6 col-sm-12">
+            <div class="inner-box">
+              <div class="event-1-block  wow fadeInLeft" data-wow-delay=".1s" data-wow-duration=".8s">
+                <div class="event-1-image mb-3 mb-md-0 me-md-3 text-center">
+                  <a href="#"><img src="/assets/images/womens_hostel/branches/image1.webp" alt="" class="img-fluid rounded"></a>
+                </div>
+                <div class="event-1-bottom-content">
+                  <h4 class="event-1-title mb_5 mt_25"><a href="#">Starts from 13000/month</a></h4>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item mix cat-3 col-lg-12 col-md-6 col-sm-12">
+            <div class="inner-box">
+              
+            </div>
+          </div>
+       <div class="gallery-item mix cat-4 col-lg-12 col-md-6 col-sm-12">
+            <div class="inner-box">
+            
+            </div>
+          </div>
+          <!-- More Women's Hostel -->
+          <div class="gallery-item mix cat-5 col-lg-12 col-md-6 col-sm-12">
+            <div class="inner-box">
+             
+            </div>
+          </div>
+           <!-- Rooms -->
+          <div class="gallery-item mix cat-6 col-lg-12 col-md-6 col-sm-12">
+            <div class="inner-box">
+              
+            </div>
+          </div>
+
+          <!-- Rooms -->
+          <div class="gallery-item mix cat-7 col-lg-12 col-md-6 col-sm-12">
+            <div class="inner-box">
+             
+            </div>
+          </div>
+        <!-- Rooms -->
+          <div class="gallery-item mix cat-8 col-lg-12 col-md-6 col-sm-12">
+            <div class="inner-box">
+             
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.col-lg-9 -->
+
+    </div> <!-- /.row -->
+  </div> <!-- /.auto-container -->
+</section>
+<!-- ===== Filter Section End ===== -->
+
+
+        </div> <!-- /.single-post -->
+      </div> <!-- /.col-lg-8 -->
+
+      <!-- Right Column: Menu List -->
+      <div class="col-lg-4 ps-lg-40">
+        <div class="event-info-widget mb_30">
+          <h4 class="theme-bg color_light p_16 pl-30">Menu List</h4>
+          <div class="gray-bg p_30 pt_10 pb_0 fs_18">
+            <div class="card-body marka-card-scroll">
+              
+              <!-- Monday -->
+              <div class="marka_scroll">
+                <h4 class="feature-3-title pb_10">Monday</h4>
+                <ul>
+                  <li class="markacolour"><span class="fw_medium color_dark">Breakfast:</span> Idly, Sambaar, Chutney, Tea</li>
+                  <li><div class="event-widget-divider"></div></li>
+                  <li class="markacolour"><span class="fw_medium color_dark">Lunch:</span> Lemon(or)Tamarind Rice, Pickle, Veg Fry</li>
+                  <li><div class="event-widget-divider"></div></li>
+                  <li class="markacolour"><span class="fw_medium color_dark">Dinner:</span> Chapatti(or)Poori, Kurumaa, Tea</li>
+                </ul>
+              </div>
+
+              <!-- Tuesday -->
+              <div class="marka_scroll">
+                <h4 class="feature-3-title pb_10">Tuesday</h4>
+                <ul>
+                  <li class="markacolour"><span class="fw_medium color_dark">Breakfast:</span> Upma, Sugar, Chutney, Tea</li>
+                  <li><div class="event-widget-divider"></div></li>
+                  <li class="markacolour"><span class="fw_medium color_dark">Lunch:</span> Rice, Pulikozhambu, Kootu, Pickle, ButterMilk</li>
+                  <li><div class="event-widget-divider"></div></li>
+                  <li class="markacolour"><span class="fw_medium color_dark">Dinner:</span> Dosai, Chutney, Sambaar, Tea</li>
+                </ul>
+              </div>
+
+              <!-- Wednesday -->
+              <div class="marka_scroll">
+                <h4 class="feature-3-title pb_10">Wednesday</h4>
+                <ul>
+                  <li class="markacolour"><span class="fw_medium color_dark">Breakfast:</span> Sevai, Sugar, Chutney, Tea</li>
+                  <li><div class="event-widget-divider"></div></li>
+                  <li class="markacolour"><span class="fw_medium color_dark">Lunch:</span> Rice, Sambaar, Rasam, Poriyal, Pickle</li>
+                  <li><div class="event-widget-divider"></div></li>
+                  <li class="markacolour"><span class="fw_medium color_dark">Dinner:</span> Vegetable Biryani, Egg(or)Raitha, Tea</li>
+                </ul>
+              </div>
+
+              <!-- Thursday -->
+              <div class="marka_scroll">
+                <h4 class="feature-3-title pb_10">Thursday</h4>
+                <ul>
+                  <li class="markacolour"><span class="fw_medium color_dark">Breakfast:</span> Dosai, Sambaar, Chutney, Tea</li>
+                  <li><div class="event-widget-divider"></div></li>
+                  <li class="markacolour"><span class="fw_medium color_dark">Lunch:</span> Rice, Karakozhambu, Kootu, Pickle, ButterMilk</li>
+                  <li><div class="event-widget-divider"></div></li>
+                  <li class="markacolour"><span class="fw_medium color_dark">Dinner:</span> Chapatti(or)Parota, Kuruma, Tea</li>
+                </ul>
+              </div>
+
+              <!-- Friday -->
+              <div class="marka_scroll">
+                <h4 class="feature-3-title pb_10">Friday</h4>
+                <ul>
+                  <li class="markacolour"><span class="fw_medium color_dark">Breakfast:</span> Semiya, Chutney, Sugar, Tea</li>
+                  <li><div class="event-widget-divider"></div></li>
+                  <li class="markacolour"><span class="fw_medium color_dark">Lunch:</span> Rice, Sambaar, Rasam, Poriyal, Pickle</li>
+                  <li><div class="event-widget-divider"></div></li>
+                  <li class="markacolour"><span class="fw_medium color_dark">Dinner:</span> Sambaar Satham, Appalam(or)Dosai, Chutney, Tea</li>
+                </ul>
+              </div>
+
+              <!-- Saturday -->
+              <div class="marka_scroll">
+                <h4 class="feature-3-title pb_10">Saturday</h4>
+                <ul>
+                  <li class="markacolour"><span class="fw_medium color_dark">Breakfast:</span> Pongal, Sambaar, Chutney, Tea</li>
+                  <li><div class="event-widget-divider"></div></li>
+                  <li class="markacolour"><span class="fw_medium color_dark">Lunch:</span> Rice, Vathakuzhambu, Kootu, Pickle, ButterMilk</li>
+                  <li><div class="event-widget-divider"></div></li>
+                  <li class="markacolour"><span class="fw_medium color_dark">Dinner:</span> Idly, Sambaar, Chutney, Sugar, Tea</li>
+                </ul>
+              </div>
+
+              <!-- Sunday -->
+              <div class="marka_scroll">
+                <h4 class="feature-3-title pb_10">Sunday</h4>
+                <ul>
+                  <li class="markacolour"><span class="fw_medium color_dark">Breakfast:</span> Noodles, Tomato Sauce, Tea</li>
+                  <li><div class="event-widget-divider"></div></li>
+                  <li class="markacolour"><span class="fw_medium color_dark">Lunch:</span> Rice, Sambaar, Chicken, Poriyal, Rasam, Pickle, ButterMilk</li>
+                  <li><div class="event-widget-divider"></div></li>
+                  <li class="markacolour"><span class="fw_medium color_dark">Dinner:</span> Rice, Sambaar, Appalam, Tea</li>
+                </ul>
+              </div>
+
+            </div> <!-- /.card-body -->
+          </div> <!-- /.gray-bg -->
+        </div> <!-- /.event-info-widget -->
+      </div> <!-- /.col-lg-4 -->
+
+    </div> <!-- /.row -->
+  </div> <!-- /.auto-container -->
+</section>
+<!-- ===== Filter Section End ===== -->
 
 <script>
-  var swiper = new Swiper(".mySwiper", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    loop: true, // continuous loop
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 250,
-      modifier: 1,
-      slideShadows: false,
-    },
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
+document.addEventListener("DOMContentLoaded", function() {
+  const filters = document.querySelectorAll(".filter");
+  const items = document.querySelectorAll(".gallery-item");
+
+  filters.forEach(filterBtn => {
+    filterBtn.addEventListener("click", function() {
+      filters.forEach(btn => btn.classList.remove("active"));
+      this.classList.add("active");
+
+      const selectedClass = this.getAttribute("data-filter");
+      items.forEach(item => {
+        if(item.classList.contains(selectedClass.substring(1))) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
   });
+
+  // Default: show first tab
+  const firstFilter = document.querySelector(".filter.active");
+  if(firstFilter) {
+    const selectedClass = firstFilter.getAttribute("data-filter");
+    items.forEach(item => {
+      if(!item.classList.contains(selectedClass.substring(1))) {
+        item.style.display = "none";
+      }
+    });
+  }
+});
 </script>
 
-<style>
-/* ====== Carousel Styling ====== */
-.travel-carousel {
-  width: 100%;
-  padding: 0px 0;
-}
 
-.swiper {
-  width: 90%;
-  max-width: 1200px;
-  padding-bottom: 60px;
-}
 
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 400px;
-  transition: transform 0.5s ease, filter 0.5s ease;
-  border-radius: 25px;
-  overflow: hidden;
-  position: relative;
-}
-
-.swiper-slide-prev,
-.swiper-slide-next {
-  filter: blur(2px) brightness(0.8);
-  transform: scale(0.9);
-}
-
-.swiper-slide-active {
-  transform: scale(1.1);
-  filter: blur(0) brightness(1);
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: 100%;
-}
-.swiper-pagination-bullet {
-  background: #E7B87C;
-  opacity: 0.6;
-  width: 10px;
-  height: 10px;
-}
-
-.swiper-pagination-bullet-active {
-  background: #2b1a50;
-  opacity: 1;
-}
-</style>
-
-          <!-- <section class="section-padding ">
-        <div class="auto-container">  
-            <div class="row " style="justify-content: center;">
-                  <div class="col-lg-12">
-                    <div class="map mb_30"> -->
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31097.971570211233!2d80.225571!3d13.019972000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526707180cf753%3A0xb824adf4b838f5fc!2sKasthuri%20Womens%20Hostel!5e0!3m2!1sen!2sus!4v1760164955525!5m2!1sen!2sus" width="1680" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                   <!-- </div>
-                  </div>
-              </div>
-          </div>
-    </section> -->
     <footer class="main-footer"> 
   <div class="footer-top">
     <div class="container">
@@ -722,7 +541,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         <!-- About Section -->
         <div class="footer-col about">
-          <img src="/assets//images/kasthurihostel_logo_KH.webp" alt="Kasthuri Hostel Logo" class="footer-logo">
+          <img src="/assets/images/kasthurihostel_logo_KH.webp" alt="Kasthuri Hostel Logo" class="footer-logo">
           <p>
             Kasthuri Hostel (Men & Women) in the heart of Chennai offers safe, spacious, and affordable accommodation 
             for students and working professionals.
@@ -900,21 +719,21 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 <!-- Scroll to top end -->
 
-<script src="/assets//js/jquery.min.js"></script>
-<script src="/assets//js/bootstrap.min.js"></script>
-<script src="/assets//js/jquery.nice-select.min.js"></script>
-<script src="/assets//js/jquery.fancybox.js"></script>
-<script src="/assets//js/isotope.js"></script>
-<script src="/assets//js/appear.js"></script>
-<script src="/assets//js/wow.js"></script>
-<script src="/assets//js/TweenMax.min.js"></script>
-<script src="/assets//js/swiper.min.js"></script>
-<script src="/assets//js/jquery.ajaxchimp.min.js"></script>
-<script src="/assets//js/parallax-scroll.js"></script>
-<script src="/assets//js/jquery-ui-1.9.2.custom.min.js"></script>
-<script src="/assets//js/booking-form.js"></script>
-<script src="/assets//js/odometer.min.js"></script>
-<script src="/assets//js/script.js"></script>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/jquery.nice-select.min.js"></script>
+<script src="/assets/js/jquery.fancybox.js"></script>
+<script src="/assets/js/isotope.js"></script>
+<script src="/assets/js/appear.js"></script>
+<script src="/assets/js/wow.js"></script>
+<script src="/assets/js/TweenMax.min.js"></script>
+<script src="/assets/js/swiper.min.js"></script>
+<script src="/assets/js/jquery.ajaxchimp.min.js"></script>
+<script src="/assets/js/parallax-scroll.js"></script>
+<script src="/assets/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="/assets/js/booking-form.js"></script>
+<script src="/assets/js/odometer.min.js"></script>
+<script src="/assets/js/script.js"></script>
 
 
 <!-- Code injected by live-server -->

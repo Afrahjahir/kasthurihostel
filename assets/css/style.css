@@ -10532,7 +10532,7 @@ button.theme-btn.search-toggler:hover {
 }
 .banner-section .content-box h1 {
 	position: relative;
-	font-size: 80px;
+	font-size: 53px;
 	color: #ffffff;
 	text-transform: capitalize;
 	opacity: 0;
@@ -12825,7 +12825,7 @@ ul.filter-tabs {
 }
 
 ul.filter-tabs li {
-    margin: 0 5px -29px;
+    margin: 0 5px 2px;
     cursor: pointer;
     color: #fff;
     background: #4b1a50;
@@ -12870,6 +12870,7 @@ ul.filter-tabs li:hover, ul.filter-tabs li.active {
 
 .event-1-bottom-content {
     position: relative;
+    text-align: center;
     background: #FAF7FC;
     flex-grow: 1;
 }
@@ -13347,29 +13348,4 @@ h2.section_heading_title_big {
     scroll-snap-align: start;
     height: 250px;
 }
-}
-@media screen and (max-width:768px) {
-  	ul.filter-tabs {
-    font-weight: 500;
-    color: #333;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-ul.filter-tabs li {
-    margin: 0 5px 10px;
-    cursor: pointer;
-    color: #fff;
-    background: #4b1a50;
-    padding: 11.5px 11px;
-    font-weight: 500;
-    transition: .5s;
-}
-.card-body{
-        height:auto;
-        overflow-y:auto;
-        scroll-behavior:smooth;
-        scroll-snap-type:y mandatory;
-        overflow: hidden;
-}
-
 }
