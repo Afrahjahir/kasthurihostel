@@ -107,6 +107,11 @@
     max-width: 360px;
     margin-top: -70px;
 }
+@media screen and (max-width:768px){
+    .marka_left{
+text-align:justify;
+}
+}
 </style>
 <div class="page-wrapper">
 
@@ -164,7 +169,7 @@
                         </div>
                     </div>
                     <div class="right-column d-flex align-items-center">
-                         <div class="header-link-btn"><a href="/contact/" class="btn-1 btn-small btn-alt">Enquiry<span></span></a></div>
+                         <div class="header-link-btn"><a href="/enquiry/" class="btn-1 btn-small btn-alt">Enquiry<span></span></a></div>
                     </div>                      
                 </div>
             </div>
@@ -189,7 +194,7 @@
                             </div>
                         </div>
                         <div class="right-column d-flex align-items-center">                        
-                            <div class="header-link-btn"><a href="/contact/" class="btn-1 btn-small btn-alt">Enquiry<span></span></a></div>
+                            <div class="header-link-btn"><a href="/enquiry/" class="btn-1 btn-small btn-alt">Enquiry<span></span></a></div>
                         </div>
                     </div>
                 </div>
@@ -330,7 +335,7 @@
         <div class="auto-container">
             <div class="section_heading text-center mb_60">
                 
-                <h2 class="section_heading_title_big" style="color: #fff;">Why Choose Kasthuri Hostel</h2>
+                <h2 class="section_heading_title_big mb_40" style="color: #fff;">Why Choose Kasthuri Hostel</h2>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6">
@@ -349,7 +354,7 @@
                         <div class="feature-2-lower-content">
                            
                             <h4 class="feature-2-title mb_20">Affordable Living</h4>
-                           <p style="text-align:justify;" class="feature-2-text">Budget-friendly options without compromising on comfort.</p>
+                           <p style="text-align:left;" class="feature-2-text">Budget-friendly options without compromising on comfort.</p>
                         </div>
                     </div>
                 </div>
@@ -484,7 +489,7 @@
                 <div class="section_heading text-center mb_50">
                     <span class="section_heading_title_small">Discover</span>
                     <h2 class="section_heading_title_big mb_20 alt">Our Facilities</h2>
-                   <p class="color_gray_light" style="color: #4b1a50;">A safe, comfortable, and homely space for every resident.
+                   <p class="color_gray_light marka_left" style="color: #4b1a50;">A safe, comfortable, and homely space for every resident.
 Designed to provide convenience, care, and complete peace of mind.</p>
                 </div>
                 <div class="row">
@@ -1032,7 +1037,7 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 
 .swiper-pagination2 .swiper-pagination-bullet {
-  background: #E7B87C;
+  background: #d8c8e2;
   opacity: 0.6;
   width: 10px;
   height: 10px;
@@ -1315,6 +1320,44 @@ document.addEventListener("DOMContentLoaded", function() {
 <script src="assets/js/script.js" defer></script>
 
 
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 </html>
 
