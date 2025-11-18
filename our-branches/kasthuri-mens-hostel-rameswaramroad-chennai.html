@@ -522,6 +522,155 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 </script>
+<!-- ====== Travel 3D Carousel Section Start ====== -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+<!-- ✅ Fancybox CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+
+<section class="section-padding" style="background: linear-gradient(135deg, #f9f5ff 0%, #f3ecfa 50%, #efe7f6 100%);">
+  <div class="p_absolute l_0 b_0 r_0 t_0" style="background: url(/assets/images/shape/pattern-3.png) no-repeat center bottom"></div>
+  <div class="auto-container">
+    <div class="section_heading text-center mb_60">
+      <h2 class="section_heading_title_big" style="color:#4b1a50">Our Reviews</h2>
+    </div>
+    <section class="travel-carousel">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+       <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <a href="/assets/images/mens_hostel_tnagar/image1.webp" data-fancybox="reviews">
+              <img src="/assets/images/mens_hostel_tnagar/image1.webp" alt="Travel 1" />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="/assets/images/mens_hostel_tnagar/image2.webp" data-fancybox="reviews">
+              <img src="/assets/images/mens_hostel_tnagar/image2.webp" alt="Travel 1" />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="/assets/images/mens_hostel_tnagar/image3.webp" data-fancybox="reviews">
+              <img src="/assets/images/mens_hostel_tnagar/image3.webp" alt="Travel 1" />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="/assets/images/mens_hostel_tnagar/image4.webp" data-fancybox="reviews">
+              <img src="/assets/images/mens_hostel_tnagar/image4.webp" alt="Travel 1" />
+            </a>
+          </div>
+
+      
+          <div class="swiper-slide">
+            <a href="/assets/images/mens_hostel_tnagar/image6.webp" data-fancybox="reviews">
+              <img src="/assets/images/mens_hostel_tnagar/image6.webp" alt="Travel 1" />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="/assets/images/mens_hostel_tnagar/image7.webp" data-fancybox="reviews">
+              <img src="/assets/images/mens_hostel_tnagar/image7.webp" alt="Travel 1" />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="/assets/images/mens_hostel_tnagar/image8.webp" data-fancybox="reviews">
+              <img src="/assets/images/mens_hostel_tnagar/image8.webp" alt="Travel 1" />
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Pagination Dots -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  </div>
+</section>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<!-- ✅ Fancybox JS -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true, // continuous loop
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 250,
+      modifier: 1,
+      slideShadows: false,
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
+<style>
+/* ====== Carousel Styling ====== */
+.travel-carousel {
+  width: 100%;
+  padding: 0px 0;
+}
+
+.swiper {
+  width: 90%;
+  max-width: 1200px;
+  padding-bottom: 60px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 400px;
+  transition: transform 0.5s ease, filter 0.5s ease;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+  filter: blur(2px) brightness(0.8);
+  transform: scale(0.9);
+}
+
+.swiper-slide-active {
+  transform: scale(1.1);
+  filter: blur(0) brightness(1);
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.swiper-pagination-bullet {
+  background: #E7B87C;
+  opacity: 0.6;
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #2b1a50;
+  opacity: 1;
+}
+</style>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7773.866555502442!2d80.228964!3d13.039919!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267a9aad22a2b%3A0xc9640121f65e01f2!2sNew%20Kasthuri%20Mens%20Hostel!5e0!3m2!1sen!2sin!4v1760164936922!5m2!1sen!2sin" width="1900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 <footer class="main-footer">
   <div class="footer-top">
