@@ -1952,6 +1952,10 @@ Margin
 .mb_4 {
     margin-bottom: 4px;
 }
+
+h4.room-2-title.mb_4 {
+    font-size: 25px;
+}
 .mb_5 {
     margin-bottom: 5px;
 }
