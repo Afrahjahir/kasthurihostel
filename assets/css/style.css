@@ -22358,6 +22358,10 @@ h2.marka_head {
     padding-bottom: 20px;
 }
 
+h2.marka_head.markapadding {
+    padding-bottom: 52px;
+}
+
 h3, .h3 {
 	font-size: 40px;
 	font-weight: 700;
@@ -26048,6 +26052,7 @@ section.section-padding.testimonial-page .testimonial-1-block {
 .amenities-1-content {
     position: relative;
     padding: 32px 25px;
+    height: 365px;
     padding-bottom: 14px;
     background: #fff;
     box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.1);
@@ -26699,6 +26704,7 @@ ul.contact-info-1 {
     background: #fff;
     box-shadow: 0px 10px 80px rgba(0, 0, 0, 0.1);
     max-width: 600px;
+	height: auto;
     margin: -115px 10px 0;
 }
 ul.filter-tabs li {
@@ -26811,6 +26817,10 @@ ul.filter-tabs li {
   color: #e0aaff;
   font-size: 16px;
   margin-bottom: 5px;
+}
+
+h5.markapadding {
+    padding-bottom: 19px;
 }
 
 .branch p {
